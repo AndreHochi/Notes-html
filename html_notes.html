@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Notes</title>
+  <style>
+    body {
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: #454545;
+      padding: 0 10px
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1.2
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>What is an HTML document</h1>
+  <p>An HTML document can be very broadly thought of as a tree, an example can be found clicking <a
+      href=https://www.w3schools.com/html/html_intro.asp>here</a>.
+  </p>
+  <h1>Starting a HTML document</h1>
+  <p>Every HTML document requires these three things.</p>
+  <ol>
+    <li>
+      Every HTML document requires &lt;!DOCTYPE html&gt; in the start this
+      indicates that the document is an HTML5 document.
+    </li>
+    <li>
+      Every HTML document requires &lt;html&gt; is the root element of the
+      HTML page. Consider this as the starting element that will wrap around
+      everything that is in the HTML language, and indicate everything inside
+      is HTML.
+    </li>
+    <li>
+      Every HTML document requires &lt;/html&gt; is the root element of the
+      HTML page. Consider this as the ending element that will wrap around
+      everything that is in the HTML language, and indicate everything inside
+      is HTML.
+    </li>
+  </ol>
+  <p>So at least in my eyes the simpliest HTML5 document is below.</p>
+  <h4>Example</h4>
+  <hr>
+  <p>
+    &lt;!DOCTYPE html&gt;<br />
+    &lt;html&gt;<br />
+    &lt;/html&gt;
+  </p>
+  <hr>
+  <p>
+    This document has nothing in it, but it will be interpreted as a html5
+    document with a html root.
+  </p>
+  <h1>HTML Elements</h1>
+  <p>HTML documents are built off of HTML Elements, infact you have seen one already, the HTML element. Everything
+    between &lt;html&gt; and &lt;/html&gt; is an HTML element. HTML elements very broadly can be split in to two
+    categories, nested elements and empty (unnested) elements.</p>
+  <h2>Nested Elements</h2>
+  <p>
+    You can consider nested elements as branches of the tree. Nested elements can contain other elements inside them.
+    For example the &lt;html&gt; element contains every other element. Nested elements must contain one thing but may
+    contain four things. Lets use the element &lt;p&gt; as an example. &lt;p&gt; just designates a paragraph element.
+  </p>
+  <ol>
+    <li>
+      Nested elements must contain a starting tag. ex) &lt;p&gt;
+    </li>
+    <li>
+      Nested elements generally contain a ending tag. (Sometimes this can be omitted, but this is bad practice because
+      this is not consistent) ex) &lt;/p&gt;
+    </li>
+    <li>
+      Nested elements generally wraps around text. ex) &lt;p&gt;Hello.&lt;/p&gt;
+    </li>
+    <li>
+      Nested elements can contain attributes. ex) &lt;p style="color:red"&gt;Hello.&lt;/p&gt;
+    </li>
+  </ol>
+  <p>Below are a list of some common nested elements.</p>
+  <ul>
+    <li>
+      <b>&lt;!DOCTYPE&gt;</b> This defines the document type. There are a few different types of HTML (HTML5, HTML4,
+      XHTML) and
+      this will define which type you will be using. &lt;!DOCTYPE html&gt; by default uses HTML5.
+    </li>
+    <li>
+      <b>&lt;html&gt;</b> This is the root element for the entire HTML document. A notible attribute to this is you can
+      define the language of your document to make it easier for search engines to find your document for example &lt;
+      html lang="en"&gt;.
+    </li>
+    <li>
+      <b>&lt;head&gt;</b> This the head element. This defines alot of metadata about the document. This is where you
+      would define &lt;title&gt;, &lt;style&gt;, and &lt;link&gt;.
+    </li>
+    <li>
+      <b>&lt;title&gt;</b> This is the title element. This defines the title in the tab of your window. This also helps
+      search engines find your website.
+    </li>
+    <li>
+      <b>&lt;style&gt;</b> This is the style element. This is where you can define all the styling for visible elements.
+      Below is an example of some styling.
+      <hr>
+      <p>
+        &lt;style&gt; <br>
+        h1 {color:red;} <br>
+        &lt;/style&gt;
+      </p>
+      <hr>
+    </li>
+    <li>
+      <b>&lt;h1&gt; to &lt;h6&gt;</b> This is the header element. This is where you write out headers. &lt;h1&gt; is by
+      default the largest header and &lt;h6&gt; is by default the smallest header. This element supports global
+      attributes.
+    </li>
+    <li>
+      <b>&lt;p&gt;</b> This is the paragraph element. This is where you would write out paragraphs. This is likely going
+      to be the bulk of the visible written element seen by the user. This element supports global attributes.
+    </li>
+    <li>
+      <b>&lt;b&gt;</b> This is the bold element. This element when wrapped around another text element will turn the
+      text bold.
+    </li>
+    <li>
+      <b>&lt;a&gt;</b> This is the hyperlink element. This element when wrapped around another text element will add a
+      hyperlink to them. This element has an attribute called href which needs to be assigned to the linked website
+    </li>
+    <li>
+      <b>&lt;ul&gt;</b> This is the unordered list element. This element defines an unordered list,
+      text bold.
+    </li>
+    <li>
+      <b>&lt;ol&gt;</b> This is the ordered list element. This element defines an ordered list,
+      text bold.
+    </li>
+    <li>
+      <b>&lt;li&gt;</b> This is the list item element. This element wrapped around by the &lt;ul&gt; or &lt;ol&gt;
+      element will add the item to the list.
+      text bold.
+    </li>
+  </ul>
+  <h2>Empty (Unnested) HTML Elements</h2>
+  <p>
+    Empty (Unnested) HTML Elements are elements that do not contain other elements. For example an &lt;img&gt; element
+    will not contain other elements. &lt;img&gt; is an image element. Empty (Unnested) HTML Elements generally contain
+    two things.
+  </p>
+  <ol>
+    <li>
+      Empty (Unnested) elements must contain a starting tag. ex) &lt;img&gt;
+    </li>
+    <li>
+      Empty (Unnested) elements can contain attributes. ex) &lt;img src="img_girl.jpg"&gt;
+    </li>
+  </ol>
+  <p>Below are a list of some common empty (unnested) elements.</p>
+  <ul>
+    <li>
+      <b>&lt;link&gt;</b> This is the link element. Despite the name this is not a hyperlink that will take you to a new
+      website this is a link to a css document that you can use to style everything instead of using the style element
+      (this is also the prefered way of styling).
+    </li>
+    <li>
+      <b>&lt;img&gt;</b> This is the image element. There are four notable attributes, src which stands for source where
+      you provide the source to the image, alt which displays the alt text for the image, and width and height which
+      displays the width and height of the image.
+    </li>
+  </ul>
+  <h2>
+    Global Attributes
+  </h2>
+  <p>
+    Global attributes are attributes used in all HTML elements. Whether its worthwhile is another question.
+  </p>
+  <ul>
+    <li>
+      class. This attribute defines the class of an object. This is normally used for styling to define alot of objects as the same class so the styling can be applied to all of them
+    </li>
+    <li>
+      id. This attribute defines a unique ID for an object. This is normally used with javascript. 
+    </li>
+    <li>
+      lang. This attribute defines the lanaguage of an object.
+    </li>
+    <li>
+      style. This attribute defines inline css for an object.
+    </li>
+    <li>
+      title. This attribute defines extra information for an object. This information is normally seen when hovering over the object.
+    </li>
+  </ul>
+
+  <h2>
+    Credits
+  </h2>
+  <p>Styling completely stolen from
+    <a href=http://bettermotherfuckingwebsite.com />
+    http://bettermotherfuckingwebsite.com/
+    </a>
+    <br>
+    Notes are 99 percent referenced from
+    <a href=https://www.w3schools.com/html/default.asp />
+    https://www.w3schools.com/html/default.asp
+    </a>
+  </p>
+</body>
+
+</html>
